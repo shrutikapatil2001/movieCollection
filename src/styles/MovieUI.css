@@ -1,0 +1,70 @@
+/* Background Gradient */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ce7fc3, #e18ae4);
+  min-height: 100vh;
+  color: white;
+}
+
+/* Main Container */
+.movie-container {
+  padding: 40px;
+  text-align: center;
+}
+
+/* Glass Card */
+.movie-card {
+  background: rgba(189, 105, 175, 0.904);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 60%;
+  transition: 0.4s ease;
+  box-shadow: 0 8px 32px rgba(236, 181, 236, 0.89);
+}
+
+/* Hover Effect */
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(255, 0, 150, 0.5);
+}
+
+/* Title */
+.movie-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #160715;
+  margin-bottom: 10px;
+}
+
+/* Animated Stars */
+.stars {
+  color: gold;
+  font-size: 20px;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px gold; }
+  to { text-shadow: 0 0 20px orange; }
+}
+
+/* Modern Button */
+.modern-btn {
+  background: linear-gradient(45deg, #ec38ce, rgb(238, 156, 170), #ee8af1);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  color: rgb(12, 9, 9);
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+.modern-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(226, 8, 204, 0.815);
+}
